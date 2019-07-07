@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="{{FOOD_DETAIL.link}}" alt="">
+    <p>Tiêu đề: {{FOOD_DETAIL.title}}</p>
+    <p>Mô tả: {{FOOD_DETAIL.des}}</p>
+    {% if FOOD_DETAIL._type == 'food' %}
+        <p>Loại : đồ ăn</p>
+        {% else %}
+        <p>Loại : đồ uống</p>
+        {% endif %}
+    <a></a>
+</body>
+</html>
